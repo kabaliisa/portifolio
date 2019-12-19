@@ -827,9 +827,9 @@
             <div class="row">
 
                 <div class="col-md-10 col-md-offset-1">
-                    <form id="contact-form" method="post" action="https://send-email-api.herokuapp.com/send" method="POST" class="wow fadeInDown" data-wow-delay="1.2s">
+                    <form  method="post" action="https://send-email-api.herokuapp.com/send" method="POST" class="wow fadeInDown" data-wow-delay="1.2s">
 
-                        <div class="messages"></div> <!--you can change the message in contact.php file -->
+                        <!-- <div class="messages"></div> you can change the message in contact.php file -->
 
                         <div class="controls">
 
@@ -842,7 +842,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_email" type="email" name="toEmail" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                            
+                                        <input id="form_email" type="email" name="fromEmail" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <input type="hidden" name="toEmail" value="kabaliisa15@gmail.com"> <!--Here is your email-->
+                                    <div class="form-group">
+                                        <input id="form_email" type="hidden" name="subject" class="form-control" value="eheerhr" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
